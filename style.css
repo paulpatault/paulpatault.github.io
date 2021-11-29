@@ -1,0 +1,90 @@
+@import "./JetBrains-Mono.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f6f1ea;
+    font-family: "JetBrains Mono", sans-serif;
+    font-size: 15px;
+    /* color: #38220f; */
+    /* color: #422710; */
+    color: #723f0e;
+}
+
+pre {
+    font-family: "JetBrains Mono", sans-serif;
+}
+
+small {
+    color: #563518;
+    font-family: "JetBrains Mono", serif;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: left;
+}
+
+h2 {
+    margin: 20px 30px;
+    border-bottom: 2px solid #888;
+    font-size: 24px;
+}
+
+h3 {
+    margin: 20px 60px;
+    color: #888;
+    border-bottom:1px solid #888;
+    font-size: 22px;
+}
+
+h4 {
+    margin-top: 15px;
+    margin-bottom:5px;
+    font-size:18px;
+}
+
+a {
+    color: #e59152;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+a:link {
+    color: #e59152;
+}
+
+a:visited {
+    color: #704d36;
+}
+
+a:hover {
+    color: #a46637;
+    text-decoration: underline;
+}
+
+.title_name {
+    font-size: 30px;
+    text-align: center;
+    width: 44%;
+}
+
+.key {
+    font-weight:bolder;
+    color: #876e54;
+}
+
+.key2 {
+    font-weight:bolder;
+    color: #5e4d3b;
+}
+
+/* pre {
+    display: none;
+    visibility: hidden;
+}
+
+.section:hover + pre {
+    display: block;
+    visibility: visible;
+} */
