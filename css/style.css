@@ -1,0 +1,197 @@
+/*---------------------------------------------------------------------------*/
+/*- base --------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+@import "./JetBrains-Mono.css";
+
+:root{
+    --brown1:   #422710;
+    --brown2:   #563518;
+    --brown3:   #B87834;
+    --blue2:    #1D5D9B;
+    --blue1:    #75C2F6;
+    --yellow2:  #F4D160;
+    --yellow1:  #FBEEAC;
+    --blue3:    #002B5B;
+    --red:      #aa4422;
+    --small:    #DFD5A5;
+    --h3:       #96897B;
+    --back:     #F9F5EB;
+}
+
+html {
+    max-width: 840px;
+    margin: auto;
+}
+body {
+    margin: .5em;
+    padding: 0;
+    font-family: Futura, sans-serif; /* "JetBrains Mono" */
+    font-size: 18px;
+    background: var(--back);
+    color: var(--brown1);
+}
+p {
+    margin: .2em 0;
+}
+h1 {
+    letter-spacing: .1em;
+    font-size: 1.6em;
+    text-align: left;
+    margin-bottom: .2em;
+}
+h2 {
+    margin: 1em 0 .5em;
+    border-bottom: 2px solid var(--brown1);
+    font-size: 1.1em;
+}
+h3 {
+    font-size: .9em;
+    margin: .5em 0 .2em;
+    color: var(--h3);
+    border-bottom: 1px solid var(--h3);
+}
+a {
+    color: var(--blue2);
+    text-decoration: none;
+    font-size: .9em;
+}
+a:visited {
+    color: var(--blue3);
+}
+a:hover {
+    color: var(--blue2);
+    background-color: var(--yellow1);
+}
+ul {
+  margin: .5em 0;
+}
+li {
+  margin: .5em 0;
+}
+
+button {
+  border: none;
+  color: var(--back);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: var(--back); 
+  color: var(--blue2); 
+  border: 2px solid var(--blue2);
+}
+button:hover {
+  background-color: var(--blue2);
+  color: white;
+}
+small {
+    color: var(--brown2);
+    font-family: "JetBrains Mono", serif;
+}
+
+/*---------------------------------------------------------------------------*/
+/*- classes -----------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+.en {
+    font-style: italic;
+}
+.note {
+    font-size: .9em;
+}
+.columns {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.column {
+    /* flex-grow: 1; */
+    margin: 0 0 0 1em;
+}
+.keywords {
+    margin: 0;
+    padding-left: 0;
+}
+.mono {
+    font-family: monospace, sans-serif;
+}
+.sc {
+    font-variant-caps: small-caps;
+}
+.date {
+    font-size: 0.8em;
+    color: var(--brown3);
+    font-family: "JetBrains Mono", serif;
+    float: right;
+    line-height: 2em;
+}
+
+.separador {
+  background-color: var(--h3);
+  height: 2px;
+  max-width: 30px;
+  margin: 30px auto 8px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: var(--h3);
+    font-size: 0.8em;
+    padding-bottom: 5px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/*---------------------------------------------------------------------------*/
+/*- positional --------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+.keywords li {
+    margin: 0 .2em 0 1.2em;
+}
+.header p {
+    margin: 0;
+}
+.header hr {
+    margin: .2em 0;
+}
+
+ul.inline li {
+    display: inline;
+    padding: 10px 20px;
+}
+ul.inline > li > a {
+    font-weight: normal;
+    text-decoration: none;
+}
+ul.inline > li > a:hover {
+    color: var(--blue2);
+    background-color: var(--yellow1);
+}
+.header a {
+    font-weight: bold;
+}
+
+li a {
+    font-weight: bold;
+}
+
+pre.quine {
+    margin-top: 5%;
+}
+
+/*---------------------------------------------------------------------------*/
+/*- EOF ---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/

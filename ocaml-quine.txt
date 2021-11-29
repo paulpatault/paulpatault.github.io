@@ -1,0 +1,19 @@
+let diag e =
+  let open String in
+  split_on_char (Char.chr 39) e
+  |> concat (String.make 1 (Char.chr 34))
+  |> split_on_char (Char.chr 120)
+  |> concat (Printf.sprintf "%s" e)
+
+let _ =
+  "let diag e =
+  let open String in
+  split_on_char (Char.chr 39) e
+  |> concat (String.make 1 (Char.chr 34))
+  |> split_on_char (Char.chr 120)
+  |> concat (Printf.sprintf '%s' e)
+
+let _ =
+  'x'
+  |> diag |> print_endline"
+  |> diag |> print_endline

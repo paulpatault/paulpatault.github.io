@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="./css/style.css?version=3" title="Normal">
+        <link rel="Shortcut Icon" href="imgs/let.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <title> Paul Patault - Quine </title>
+    </head>
+
+    <body>
+
+        <div id="global">
+            <div id="header" style="height:500px">
+                <pre class="quine">
+let diag e =
+  let dg = String.make 1 (Char.chr 34) in
+  String.split_on_char (Char.chr 120) e
+  |> String.concat (dg ^ e ^ dg)
+
+let _ =
+  "let diag e =
+  let dg = String.make 1 (Char.chr 34) in
+  String.split_on_char (Char.chr 120) e
+  |> String.concat (dg ^ e ^ dg)
+
+let _ =
+  x
+  |> diag |> print_endline"
+  |> diag |> print_endline</pre>
+            </div>
+        </div>
+    </body>
+</html>
