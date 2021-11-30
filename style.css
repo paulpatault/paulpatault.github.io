@@ -6,9 +6,8 @@ body {
     background: #f6f1ea;
     font-family: "JetBrains Mono", sans-serif;
     font-size: 15px;
-    /* color: #38220f; */
-    /* color: #422710; */
-    color: #723f0e;
+    color: #422710;
+    /* color: #723f0e; */
 }
 
 pre {
