@@ -78,6 +78,14 @@ a:hover {
     color: #5e4d3b;
 }
 
+ul {
+    /* padding: 0; */
+}
+
+li.main, i {
+    color: #876e54;
+}
+
 /* pre {
     display: none;
     visibility: hidden;
