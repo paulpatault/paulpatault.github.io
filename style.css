@@ -63,6 +63,10 @@ a:hover {
     text-decoration: underline;
 }
 
+.fa:hover {
+    color: #a42;
+}
+
 .title_name {
     font-size: 30px;
     text-align: center;
