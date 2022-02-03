@@ -5,7 +5,7 @@ body {
     padding: 0;
     background: #f6f1ea;
     font-family: "JetBrains Mono", sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     color: #422710;
     /* color: #723f0e; */
 }
@@ -20,27 +20,27 @@ small {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 25px;
     text-align: left;
 }
 
 h2 {
     margin: 20px 30px;
     border-bottom: 2px solid #888;
-    font-size: 24px;
+    font-size: 21px;
 }
 
 h3 {
     margin: 20px 60px;
     color: #888;
     border-bottom:1px solid #888;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 h4 {
     margin-top: 15px;
     margin-bottom:5px;
-    font-size:18px;
+    font-size:15px;
 }
 
 a {
@@ -85,13 +85,3 @@ ul {
 li.main, i {
     color: #876e54;
 }
-
-/* pre {
-    display: none;
-    visibility: hidden;
-}
-
-.section:hover + pre {
-    display: block;
-    visibility: visible;
-} */
