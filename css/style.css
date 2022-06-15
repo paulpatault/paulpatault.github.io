@@ -3,11 +3,20 @@
 body {
     margin: 0;
     padding: 0;
-    background: #f6f1ea;
+    background : #563518;
     font-family: "JetBrains Mono", sans-serif;
     font-size: 13px;
     color: #422710;
-    /* color: #723f0e; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#global {
+  width: 50%;
+  margin-top: 2vh;
+  height: 95vh;
+  background: #f6f1ea;
 }
 
 pre {
@@ -21,7 +30,7 @@ small {
 
 h1 {
     font-size: 25px;
-    text-align: left;
+    /* text-align: left; */
 }
 
 h2 {
@@ -40,8 +49,12 @@ h3 {
 h4 {
     margin-top: 15px;
     margin-bottom:5px;
-    padding-left:1%;
+    padding-left:10%;
     font-size:15px;
+}
+
+pre.quine {
+    margin-top: 5%;
 }
 
 a {
@@ -91,3 +104,4 @@ ul {
 li.main, i {
     color: #876e54;
 }
+
