@@ -1,13 +1,32 @@
 @import "./JetBrains-Mono.css";
 
+/**********/
+/** BASE **/
+/**********/
+
+
+:root{
+    --link:    #e59152;
+    --linkh:   #a46637;
+    --linkv:   #704d36;
+    --li:      #876e54;
+    --key2:    #5e4d3b;
+    --main2:   #563518;
+    --main:    #422710;
+    --fa:      #aa4422;
+    --border:  #888888;
+    --back:    #f6f1ea;
+    --bborder: var(--linkh);
+}
+
+
 body {
     margin: 0;
     padding: 0;
-    background: #f6f1ea;
+    background: var(--back);
     font-family: "JetBrains Mono", sans-serif;
     font-size: 13px;
-    color: #422710;
-    /* color: #723f0e; */
+    color: var(--main);
 }
 
 pre {
@@ -15,7 +34,7 @@ pre {
 }
 
 small {
-    color: #563518;
+    color: var(--main2);
     font-family: "JetBrains Mono", serif;
 }
 
@@ -26,14 +45,14 @@ h1 {
 
 h2 {
     margin: 20px 30px;
-    border-bottom: 2px solid #888;
+    border-bottom: 2px solid var(--border);
     font-size: 21px;
 }
 
 h3 {
     margin: 20px 60px;
-    color: #888;
-    border-bottom:1px solid #888;
+    color: var(--border);
+    border-bottom:1px solid var(--border);
     font-size: 18px;
 }
 
@@ -45,26 +64,60 @@ h4 {
 }
 
 a {
-    color: #e59152;
+    color: var(--link);
     text-decoration:none;
     font-weight:bold;
 }
 
 a:link {
-    color: #e59152;
+    color: var(--link);
 }
 
 a:visited {
-    color: #704d36;
+    color: var(--linkv);
 }
 
 a:hover {
-    color: #a46637;
+    color: var(--linkh);
     text-decoration: underline;
 }
 
+ul {
+    /* padding: 0; */
+}
+
+button {
+  border: none;
+  color: var(--back);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: var(--back); 
+  color: var(--linkh); 
+  border: 2px solid var(--bborder);
+}
+
+
+button:hover {
+  background-color: var(--bborder);
+  color: white;
+}
+
+/*************/
+/** CLASSES **/
+/*************/
+
+li.main, i {
+    color: var(--li);
+}
+
 .fa:hover {
-    color: #a42;
+    color: var(--fa);
 }
 
 .title_name {
@@ -76,18 +129,20 @@ a:hover {
 .key {
     text-decoration:none;
     font-weight:bold;
-    color: #704d36;
+    color: var(--linkv);
 }
 
 .key2 {
     font-weight:bolder;
-    color: #5e4d3b;
+    color: var(--key2);
 }
 
-ul {
-    /* padding: 0; */
-}
-
-li.main, i {
-    color: #876e54;
+.center {
+    flex-flow: column wrap;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
