@@ -56,7 +56,7 @@ h3 {
 a {
     color: var(--blue1);
     text-decoration: none;
-    font-size: .9em;
+    font-size: .95em;
 }
 
 a:visited {
