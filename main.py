@@ -1,3 +1,5 @@
+# Copyright (c) 2024 Paul Patault (www.paulpatault.fr)
+# Distributed under the MIT License
 
 import os, sys
 from jinja2 import Environment, PackageLoader, select_autoescape
